@@ -1,0 +1,51 @@
+/* Moving Text Animation */
+/* Ensure the marquee text is visible and moves properly */
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    background-color: rgb(11, 177, 243); /* Background for marquee bar */
+    padding: 20px 0;
+    position: relative;
+    margin-top: 10px;
+  }
+  
+  .marquee-text {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    position: absolute;
+    top: 50%; /* Centers the text vertically */
+    transform: translateY(-50%); /* Ensures exact center alignment */
+    left: 100%;  /* Start completely off-screen to the right */
+    animation: marquee 10s linear infinite;
+  }
+  
+  @keyframes marquee {
+    from {
+      left: 100%;  /* Start fully outside the right */
+    }
+    to {
+      left: -100%;  /* Move fully outside the left */
+    }
+  }
+  
+  
+  /* Watch Image Styling */
+  .watch-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+  }
+  
+  
+  .watch-container img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
