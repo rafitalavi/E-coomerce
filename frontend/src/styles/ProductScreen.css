@@ -1,0 +1,100 @@
+/* ProductScreen.css */
+
+.product-screen-container {
+    padding: 20px; /* Add some overall padding */
+    background-color: #f8f9fa; /* Light background color */
+}
+
+.go-back-btn {
+    margin-bottom: 20px; /* Space below the "Go Back" button */
+}
+
+.product-details-row {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+.product-image-col {
+    padding-right: 20px; /* Space between image and details */
+}
+
+.product-image {
+    border-radius: 8px; /* Rounded corners for the image */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle image shadow */
+}
+
+
+.product-info-col {
+    padding-left: 20px; /* Space between image and details */
+}
+
+.product-title h3 {
+    color: #343a40; /* Darker heading color */
+}
+
+.product-rating {
+    margin-bottom: 10px;
+}
+
+.product-description {
+    color: #6c757d; /* Slightly lighter text color */
+}
+
+.product-purchase-col {
+    padding-left: 20px;
+}
+
+.product-purchase-card {
+    border: none; /* Remove default card border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Card shadow */
+    border-radius: 8px;
+}
+
+.product-price {
+    padding-bottom: 10px;
+}
+
+.limited-deal-badge {
+    background-color: #ffc107; /* Keep the yellow background */
+    color: #000; /* Black text for better contrast */
+}
+
+.original-price {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.product-stock {
+    margin-bottom: 15px;
+}
+
+.add-to-cart-button {
+    background-color: #007bff; /* Blue button */
+    border-color: #007bff;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.add-to-cart-button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.add-to-cart-button:disabled {
+    background-color: #cccccc; /* Gray when disabled */
+    border-color: #cccccc;
+    cursor: default; /* Prevent hover effect when disabled */
+}
+@keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  .blink-warning {
+    animation: blink 2s infinite;
+    background-color: #f00a0a ;
+  }
+  .limited-deal-badge {
+    animation: blink 2s infinite;
+    font-weight: bold;
+  }
+  

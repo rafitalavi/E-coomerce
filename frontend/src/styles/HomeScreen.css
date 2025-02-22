@@ -15,7 +15,7 @@
     display: inline-block;
     font-size: 20px;
     font-weight: bold;
-    color: #ffffff;
+    color: #f3f1f1;
     position: absolute;
     top: 50%; /* Centers the text vertically */
     transform: translateY(-50%); /* Ensures exact center alignment */
@@ -35,13 +35,11 @@
   
   /* Watch Image Styling */
   .watch-container {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 150px;
-  }
-  
+    display: flex;
+    justify-content: end; /* Center horizontally */
+    margin-top: 20px; /* Space below the marquee */
+}
+
   
   .watch-container img {
     width: 100%;

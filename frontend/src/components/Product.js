@@ -1,23 +1,25 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import '../styles/Product.css'; // Ensure you create a CSS file for animations
-
+import Rating from './Rating';
+import {Link, link} from 'react-router-dom'
 function Product({ product }) {
   return (
     <Card className='product-card my-3 p-3 rounded shadow-lg'>
-      <a href={`/products/${product._id}`}>
+      <Link to={`/products/${product._id}`}>
         <Card.Img variant="top" src={product.image} className="product-image" />
-      </a>
+      </Link>
 
       <Card.Body className="text-center">
-        <a href={`/products/${product._id}`} className="text-decoration-none">
+        <Link to={`/products/${product._id}`} className="text-decoration-none">
           <Card.Title as='div' className="product-title">
             <strong>{product.name}</strong>
           </Card.Title>
-        </a>
+        </Link>
 
-        <Card.Text as='div' className="rating">
-          ⭐ {product.rating} from {product.numReviews} reviews
+        <Card.Text as='div'>
+           {/* {product.rating} from {product.numReviews} reviews */}
+           <Rating value={product.rating} text ={`${product.numReviews} reveiws`} color={'#f8e825'}/>
         </Card.Text>
 
         {product.offerPrice ? (

@@ -23,7 +23,7 @@ function HomeScreen() {
       </div>
 
       {/* Fixed Digital Clock on the Right */}
-      <div className="fixed-watch">
+      <div className="watch-container">
         {time.toLocaleTimeString()}
       </div>
 
